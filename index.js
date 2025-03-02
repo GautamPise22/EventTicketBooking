@@ -84,10 +84,7 @@ app.use((req, res) => {
 });
 
 // Start Server
-// Change this part in your index.js
 const PORT = process.env.PORT || 4000;
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-}
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
